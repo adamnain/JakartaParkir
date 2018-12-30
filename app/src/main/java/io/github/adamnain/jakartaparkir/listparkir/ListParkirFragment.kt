@@ -44,7 +44,7 @@ class ListParkirFragment : Fragment(), ListParkirView {
         setHasOptionsMenu(true)
         setSpinner()
         adapter = ListParkirAdapter(parkir, ctx){
-            context!!.startActivity<DetailActivity>("id" to "${it.idParkir}")
+            context!!.startActivity<DetailActivity>("PARKIR" to it)
         }
         listParkir.adapter = adapter
 
