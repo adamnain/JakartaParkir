@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">JakartaParkir</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="about">About</string>
+    <string name="favorite">Favorite</string>
+    <string name="Search">Search</string>
+
+    <string-array name="querykategori">
+        <item></item>
+        <item>kategori/gedung</item>
+        <item>kategori/pelataran</item>
+        <item>kategori/park and ride</item>
+    </string-array>
+
+    <string-array name="titlekategori">
+        <item>Semua Kategori</item>
+        <item>Gedung</item>
+        <item>Pelataran</item>
+        <item>Park and Ride</item>
+    </string-array>
+</resources>
