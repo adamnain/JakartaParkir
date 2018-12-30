@@ -4,10 +4,6 @@ import io.github.adamnain.jakartaparkir.BuildConfig
 
 object ParkirAPI{
 
-//    fun getListParkir(): String{
-//        return BuildConfig.BASE_URL + "parkir/"
-//    }
-
     fun getListParkirKategori(kategori: String?): String{
         return BuildConfig.BASE_URL + "parkir/" + kategori
     }
