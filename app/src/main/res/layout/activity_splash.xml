@@ -12,10 +12,11 @@
             android:id="@+id/logo_splash"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_local_parking_black_24dp"
+            android:src="@drawable/ic_local_parking_white"
             android:layout_width="100dp"
             android:layout_height="100dp"/>
     <TextView
+            android:textColor="@color/txtLightWhite"
             android:layout_below="@id/logo_splash"
             android:id="@+id/textTitle"
             android:layout_width="match_parent"

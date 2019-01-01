@@ -3,8 +3,7 @@
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@drawable/gradient1">
+              android:layout_height="wrap_content">
 
     <!-- TODO: Ieu Layout List Fi -->
 
@@ -14,7 +13,7 @@
             android:layout_height="wrap_content">
 
         <LinearLayout
-                android:padding="5dp"
+                android:padding="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -22,8 +21,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_tempat_parkir"
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:scaleType="centerCrop"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"/>

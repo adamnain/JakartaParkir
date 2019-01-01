@@ -61,7 +61,7 @@
                                 <ImageView
                                         android:layout_width="60dp"
                                         android:layout_height="match_parent"
-                                        android:src="@drawable/spotpoint"
+                                        android:src="@drawable/ic_info_black_24dp"
                                         android:background="@color/bgDarkBlue"/>
 
                                 <LinearLayout
@@ -83,7 +83,7 @@
                                             android:id="@+id/tv_nama_detail"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:textColor="@color/bgDarkBlue"
+                                            android:textColor="@color/black"
                                             android:padding="1dp"
                                             android:textStyle="bold"
                                             android:layout_marginLeft="1dp"/>
@@ -129,7 +129,7 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:padding="1dp"
-                                                android:textColor="@color/bgDarkGreen"
+                                                android:textColor="@color/black"
                                                 android:textStyle="bold"
                                                 android:layout_gravity="center"
                                                 android:layout_marginLeft="1dp"/>
@@ -163,30 +163,32 @@
                                                 android:padding="1dp"
                                                 android:textStyle="bold"
                                                 android:layout_marginLeft="1dp"/>
+
                                         <LinearLayout
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:orientation="horizontal">
-                                    <TextView
-                                            android:text="Luas"
-                                            android:id="@+id/tv_luas_detail"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="1dp"
-                                            android:textStyle="bold"
-                                            android:textColor="@color/bgYellowDark"
-                                            android:layout_gravity="center"
-                                            android:layout_marginLeft="1dp"/>
 
-                                    <TextView
-                                            android:text="M2"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:padding="1dp"
-                                            android:textStyle="bold"
-                                            android:textColor="@color/bgYellowDark"
-                                            android:layout_gravity="center"
-                                            android:layout_marginLeft="1dp"/>
+                                            <TextView
+                                                    android:text="Luas"
+                                                    android:id="@+id/tv_luas_detail"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:padding="1dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="@color/black"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="1dp"/>
+
+                                            <TextView
+                                                    android:text="M2"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:padding="1dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="@color/black"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginLeft="1dp"/>
                                         </LinearLayout>
                                     </LinearLayout>
                                 </LinearLayout>
@@ -225,18 +227,19 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:padding="1dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/black"
                                             android:layout_gravity="center"
-                                            android:layout_marginLeft="1dp"
-                                            android:textColor="@color/bgGoldDark"
-                                            android:textStyle="bold"/>
+                                            android:layout_marginLeft="1dp"/>
+
                                     <TextView
-                                            android:gravity="center"
                                             android:text="Kuota Tersisa"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:padding="1dp"
+                                            android:textColor="@color/black"
                                             android:layout_marginLeft="1dp"
-                                            android:textColor="@color/bgGoldDark"
+                                            android:gravity="center"
                                             android:textStyle="bold"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -268,15 +271,16 @@
                                             android:layout_height="wrap_content"
                                             android:padding="1dp"
                                             android:textStyle="bold"
-                                            android:textColor="@color/bgRedDark"
+                                            android:textColor="@color/black"
                                             android:layout_gravity="center"
                                             android:layout_marginLeft="1dp"/>
+
                                     <TextView
                                             android:text="Kuota Tersisa"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:padding="1dp"
-                                            android:textColor="@color/bgRedDark"
+                                            android:textColor="@color/black"
                                             android:layout_marginLeft="1dp"
                                             android:gravity="center"
                                             android:textStyle="bold"/>
@@ -304,15 +308,17 @@
                                         android:orientation="vertical">
 
                                     <TextView
+                                            android:gravity="center"
                                             android:text="Kapasitas Bus"
                                             android:id="@+id/tv_kapasitas_bus_detail"
-                                            android:layout_width="wrap_content"
+                                            android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center"
                                             android:padding="1dp"
-                                            android:textColor="@color/bgOrangeDark"
+                                            android:textColor="@color/black"
                                             android:textStyle="bold"
                                             android:layout_marginLeft="1dp"/>
+
                                     <TextView
                                             android:gravity="center"
                                             android:text="Kuota Tersisa"
@@ -320,7 +326,7 @@
                                             android:layout_height="wrap_content"
                                             android:padding="1dp"
                                             android:layout_marginLeft="1dp"
-                                            android:textColor="@color/bgOrangeDark"
+                                            android:textColor="@color/black"
                                             android:textStyle="bold"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -336,7 +342,7 @@
                             <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="55dp"
-                                    android:src="@drawable/ic_info_black_24dp"
+                                    android:src="@drawable/spotpoint"
                                     android:background="@color/txtLightYellow"/>
 
                             <LinearLayout
@@ -344,22 +350,15 @@
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical">
 
-                                <TextView
-                                        android:text="Alamat Lokasi"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:padding="1dp"
-                                        android:layout_marginLeft="1dp"
-                                        android:textColor="@color/black"
-                                        android:textStyle="bold"/>
 
                                 <TextView
+                                        android:gravity="center"
                                         android:text="Alamat"
                                         android:id="@+id/tv_alamat_detail"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:padding="1dp"
-                                        android:textColor="@color/bgYellow"
+                                        android:textColor="@color/black"
                                         android:textStyle="bold"
                                         android:layout_marginLeft="1dp"/>
 
