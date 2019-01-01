@@ -2,5 +2,23 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#b3bf06</color>
+    <color name="bgDarkBlue">#4e48ff</color>
+    <color name="bgBlue">#bbbcd7</color>
+    <color name="txtLightWhite">#ffffff</color>
+    <color name="bgYellowSemiDark">#e2d581</color>
+    <color name="txtLightYellow">#ffeb56</color>
+    <color name="bgDarkGreen">#5e9656</color>
+    <color name="bgGreen">#c7f5c1</color>
+    <color name="bgYellowDark">#968b27</color>
+    <color name="bgYellow">#9f9100</color>
+    <color name="bgYellow2">#f7ee93</color>
+    <color name="bgOrangeDark">#e7894f</color>
+    <color name="bgOrange">#f2cab1</color>
+    <color name="bgRedDark">#e66161</color>
+    <color name="bgRed">#e4a7a7</color>
+    <color name="bgGoldDark">#916d33</color>
+    <color name="bgGold">#e1c497</color>
+    <color name="bgDark">#404040</color>
+    <color name="bgDarkHeader">#181818</color>
 </resources>

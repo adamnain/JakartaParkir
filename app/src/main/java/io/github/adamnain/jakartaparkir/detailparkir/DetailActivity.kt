@@ -53,11 +53,11 @@ class DetailActivity : AppCompatActivity(), DetailView {
             .into(iv_detail_parkir)
         tv_nama_detail.text = data[0].namaTempatParkir
         tv_jenis_detail.text = data[0].jenisLokasiParkir
-        tv_alamat_detail.text = data[0].alamatParkir
         tv_luas_detail.text = data[0].luasParkir
-        tv_kapasitas_mobil_detail.text = data[0].kapasitasMobil
         tv_kapasitas_motor_detail.text = data[0].kapasitasMotor
+        tv_kapasitas_mobil_detail.text = data[0].kapasitasMobil
         tv_kapasitas_bus_detail.text = data[0].kapasitasBusTruk
+        tv_alamat_detail.text = data[0].alamatParkir
         tv_kapasitas_bus_detail.text = data[0].kapasitasBusTruk
     }
 
