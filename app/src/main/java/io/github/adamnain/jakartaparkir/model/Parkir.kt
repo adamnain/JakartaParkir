@@ -21,7 +21,7 @@ data class Parkir(
     @SerializedName("luas_m2")
     var luasParkir:String? = null,
 
-    @SerializedName("kapasitas_mobil")
+    @SerializedName("kapasita_mobil")
     var kapasitasMobil:String? = null,
 
     @SerializedName("kapasitas_motor")

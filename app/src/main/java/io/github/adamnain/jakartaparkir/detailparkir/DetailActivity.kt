@@ -24,6 +24,9 @@ import org.jetbrains.anko.db.delete
 import org.jetbrains.anko.db.insert
 import org.jetbrains.anko.db.select
 import org.jetbrains.anko.design.snackbar
+import com.facebook.shimmer.ShimmerFrameLayout
+
+
 
 class DetailActivity : AppCompatActivity(), DetailView {
 
@@ -32,10 +35,15 @@ class DetailActivity : AppCompatActivity(), DetailView {
     private lateinit var presenter: DetailPresenter
     private var menuItem: Menu? = null
     private var isFavorite: Boolean = false
+    private lateinit var shimmerContainer: ShimmerFrameLayout
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
+
+        shimmerContainer = findViewById(R.id.shimmer_detail)
+        shimmerContainer.startShimmerAnimation()
 
         parkir = intent.getParcelableExtra("PARKIR")
         id = parkir.idParkir.toString()
@@ -44,6 +52,7 @@ class DetailActivity : AppCompatActivity(), DetailView {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         presenter = DetailPresenter(this, ApiRepository(), Gson())
         presenter.getDetailParkir(id)
+
 
     }
 
@@ -59,6 +68,8 @@ class DetailActivity : AppCompatActivity(), DetailView {
         tv_kapasitas_bus_detail.text = data[0].kapasitasBusTruk
         tv_alamat_detail.text = data[0].alamatParkir
         tv_kapasitas_bus_detail.text = data[0].kapasitasBusTruk
+        shimmerContainer.stopShimmerAnimation()
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

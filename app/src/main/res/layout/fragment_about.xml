@@ -4,10 +4,12 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".about.AboutFragment"
-        android:background="@drawable/gradient1">
+             android:background="@drawable/gradient1">
+
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
         <FrameLayout
                 android:layout_above="@id/linear_about"
                 android:id="@+id/container_about"
@@ -15,6 +17,7 @@
                 android:layout_height="wrap_content">
 
         </FrameLayout>
+
         <LinearLayout
                 android:id="@+id/linear_about"
                 android:layout_width="match_parent"
@@ -22,6 +25,7 @@
                 android:orientation="horizontal"
                 android:layout_alignParentBottom="true"
                 android:gravity="center">
+
             <Button
                     android:id="@+id/btn_adam"
                     android:layout_weight="1"
@@ -30,6 +34,7 @@
                     android:text="ADAM"
                     android:textColor="@color/colorAccent"
                     android:background="@drawable/btn_square_left"/>
+
             <Button
                     android:id="@+id/btn_luthfi"
                     android:layout_weight="1"
@@ -38,6 +43,7 @@
                     android:text="LUTHFI"
                     android:textColor="@color/colorAccent"
                     android:background="@drawable/btn_square_centre"/>
+
             <Button
                     android:id="@+id/btn_fauzi"
                     android:layout_weight="1"

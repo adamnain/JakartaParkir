@@ -1,4 +1,4 @@
-package io.github.adamnain.jakartaparkir
+package io.github.adamnain.jakartaparkir.about
 
 
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import io.github.adamnain.jakartaparkir.R
 
 
 // TODO: Rename parameter arguments, choose names that match

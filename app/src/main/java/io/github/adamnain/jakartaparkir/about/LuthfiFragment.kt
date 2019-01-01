@@ -1,4 +1,4 @@
-package io.github.adamnain.jakartaparkir
+package io.github.adamnain.jakartaparkir.about
 
 
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import io.github.adamnain.jakartaparkir.R
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -17,14 +18,14 @@ private const val ARG_PARAM2 = "param2"
  * A simple [Fragment] subclass.
  *
  */
-class adamFragment : Fragment() {
+class luthfiFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_adam, container, false)
+        return inflater.inflate(R.layout.fragment_luthfi, container, false)
     }
 
 

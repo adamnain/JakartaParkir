@@ -4,7 +4,7 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:background="@drawable/gradient2"
-             tools:context=".fauziFragment">
+             tools:context=".about.fauziFragment">
 
     <LinearLayout
             android:layout_width="match_parent"

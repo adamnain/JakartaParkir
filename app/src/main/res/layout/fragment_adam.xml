@@ -4,7 +4,7 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:background="@drawable/gradient2"
-             tools:context=".adamFragment">
+             tools:context=".about.adamFragment">
 
     <LinearLayout
             android:layout_width="match_parent"
