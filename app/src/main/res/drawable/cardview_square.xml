@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_height="20dp"
+          android:layout_width="wrap_content">
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/silver"
+                    android:endColor="@color/txtLightWhite"
+                    android:angle="270"/>
+            <corners android:topLeftRadius="15dp"
+                    android:bottomRightRadius="15dp"/>
+            <stroke
+                    android:width="1dp"
+                    android:color="@color/lineCardview"/>
+        </shape>
+
+    </item>
+</selector>

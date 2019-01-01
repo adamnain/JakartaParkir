@@ -7,237 +7,319 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".detailparkir.DetailActivity">
+        tools:context=".detailparkir.DetailActivity"
+        android:background="@drawable/gradient1">
 
     <!-- TODO: Ieu Layout Detail Fi-->
 
     <ImageView
-            android:src="@mipmap/ic_launcher"
+
             android:id="@+id/iv_detail_parkir"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:scaleType="centerCrop"/>
+            android:background="@drawable/gradient1"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="4dp"/>
+
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-    <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/bgDark"
-            app:cardElevation="@dimen/cardview_default_radius"
-            >
-        <LinearLayout
+
+        <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
+                app:cardElevation="@dimen/cardview_default_radius"
                 >
-
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                <LinearLayout
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="150dp"
-                        android:orientation="horizontal"
-                        android:background="@color/bgBlue">
-
-                    <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/spotpoint"
-                            android:background="@color/bgDarkBlue"/>
-
-                    <TextView
-                            android:text="Nama Parkiran"
-                            android:id="@+id/tv_nama_detail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/bgDarkBlue"
-                            android:padding="1dp"
-                            android:textStyle="bold"
-                            android:layout_marginLeft="1dp"/>
-                </LinearLayout>
-                <LinearLayout
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                    <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="108dp"
-                            android:orientation="horizontal"
-                            android:background="@color/bgGreen"
-                            android:layout_marginLeft="4dp">
-
-                        <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/ic_location_city_black_24dp"
-                                android:background="@color/bgDarkGreen"/>
-
-                        <TextView
-                                android:text="jenis parkiran"
-                                android:id="@+id/tv_jenis_detail"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="1dp"
-                                android:textColor="@color/bgDarkGreen"
-                                android:textStyle="bold"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="1dp"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="38dp"
-                            android:orientation="horizontal"
-                            android:background="@color/bgYellow2"
-                            android:layout_marginLeft="4dp"
-                            android:layout_marginTop="4dp">
-
-                        <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/luas"
-                                android:background="@color/bgYellowDark"/>
-
-                        <TextView
-                                android:text="Luas"
-                                android:id="@+id/tv_luas_detail"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="1dp"
-                                android:textStyle="bold"
-                                android:textColor="@color/bgYellowDark"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="1dp"/>
-                        <TextView
-                                android:text="M2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="1dp"
-                                android:textStyle="bold"
-                                android:textColor="@color/bgYellowDark"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="1dp"/>
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="105dp"
-                        android:orientation="horizontal"
-                        android:background="@color/bgGold"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginRight="4dp">
-
-                    <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/moto"
-                            android:background="@color/bgGoldDark"/>
-
-                    <TextView
-                            android:text="Kapasitas Motor"
-                            android:id="@+id/tv_kapasitas_motor_detail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="1dp"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="1dp"
-                            android:textColor="@color/bgGoldDark"
-                            android:textStyle="bold"/>
-                </LinearLayout>
-
-                <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="105dp"
-                        android:orientation="horizontal"
-                        android:background="@color/bgRed"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginRight="4dp">
-
-                    <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/car"
-                            android:background="@color/bgRedDark"/>
-
-                    <TextView
-                            android:text="Kapasitas Mobil"
-                            android:id="@+id/tv_kapasitas_mobil_detail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="1dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/bgRedDark"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="1dp"/>
-                </LinearLayout>
-1                <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="105dp"
-                        android:orientation="horizontal"
-                        android:background="@color/bgOrange"
-                        android:layout_marginTop="4dp">
-
-                    <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/bus"
-                            android:background="@color/bgOrangeDark"/>
-
-                    <TextView
-                            android:text="Kapasitas Bus"
-                            android:id="@+id/tv_kapasitas_bus_detail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                           android:layout_gravity="center"
-                            android:padding="1dp"
-                            android:textColor="@color/bgOrangeDark"
-                            android:textStyle="bold"
-                            android:layout_marginLeft="1dp"/>
-                </LinearLayout>
-            </LinearLayout>
 
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="@color/bgYellowSemiDark"
-                    android:layout_marginTop="4dp">
+                    android:background="@drawable/gradient1"
+                    >
 
-                <ImageView
+                <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="55dp"
-                        android:src="@drawable/ic_info_black_24dp"
-                        android:background="@color/txtLightYellow"/>
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                <TextView
-                        android:text="Alamat"
-                        android:id="@+id/tv_alamat_detail"
+                    <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:orientation="horizontal"
+                            android:background="@color/bgBlue">
+
+                        <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/spotpoint"
+                                android:background="@color/bgDarkBlue"/>
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:text="Lokasi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:padding="1dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="1dp"/>
+                            <TextView
+                                    android:text="Nama Parkiran"
+                                    android:id="@+id/tv_nama_detail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/bgDarkBlue"
+                                    android:padding="1dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="1dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="108dp"
+                                android:orientation="horizontal"
+                                android:background="@color/bgGreen"
+                                android:layout_marginLeft="4dp">
+
+                            <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_location_city_black_24dp"
+                                    android:background="@color/bgDarkGreen"/>
+                            <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                <TextView
+                                        android:text="Lokasi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:padding="1dp"
+                                        android:textStyle="bold"
+                                        android:layout_marginLeft="1dp"/>
+                                <TextView
+                                        android:text="jenis parkiran"
+                                        android:id="@+id/tv_jenis_detail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="1dp"
+                                        android:textColor="@color/bgDarkGreen"
+                                        android:textStyle="bold"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="1dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp"
+                                android:orientation="horizontal"
+                                android:background="@color/bgYellow2"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="4dp">
+
+                            <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/luas"
+                                    android:background="@color/bgYellowDark"/>
+
+                            <TextView
+                                    android:text="Luas"
+                                    android:id="@+id/tv_luas_detail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/bgYellowDark"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="1dp"/>
+
+                            <TextView
+                                    android:text="M2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/bgYellowDark"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="1dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="105dp"
+                            android:orientation="horizontal"
+                            android:background="@color/bgGold"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="4dp">
+
+                        <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/moto"
+                                android:background="@color/bgGoldDark"/>
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:text="Motor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+                            <TextView
+                                    android:text="Kapasitas Motor"
+                                    android:id="@+id/tv_kapasitas_motor_detail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="1dp"
+                                    android:textColor="@color/bgGoldDark"
+                                    android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="105dp"
+                            android:orientation="horizontal"
+                            android:background="@color/bgRed"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="4dp">
+
+                        <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/car"
+                                android:background="@color/bgRedDark"/>
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:text="Mobil"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+                            <TextView
+                                    android:text="Kapasitas Mobil"
+                                    android:id="@+id/tv_kapasitas_mobil_detail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/bgRedDark"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="1dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    1
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="105dp"
+                            android:orientation="horizontal"
+                            android:background="@color/bgOrange"
+                            android:layout_marginTop="4dp">
+
+                        <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/bus"
+                                android:background="@color/bgOrangeDark"/>
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:text="Bus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"/>
+                            <TextView
+                                    android:text="Kapasitas Bus"
+                                    android:id="@+id/tv_kapasitas_bus_detail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="1dp"
+                                    android:textColor="@color/bgOrangeDark"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="1dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="1dp"
-                        android:textColor="@color/bgYellow"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="1dp"/>
+                        android:orientation="vertical"
+                        android:background="@color/bgYellowSemiDark"
+                        android:layout_marginTop="4dp">
+
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:src="@drawable/ic_info_black_24dp"
+                            android:background="@color/txtLightYellow"/>
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <TextView
+                                android:text="Alamat Lokasi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:text="Alamat"
+                                android:id="@+id/tv_alamat_detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:padding="1dp"
+                                android:textColor="@color/bgYellow"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="1dp"/>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
     </ScrollView>
 </LinearLayout>

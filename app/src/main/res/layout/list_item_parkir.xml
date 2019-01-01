@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+              android:layout_height="wrap_content"
+              android:background="@drawable/gradient1">
 
     <!-- TODO: Ieu Layout List Fi -->
 
-    <android.support.v7.widget.CardView
-            android:layout_margin="1.5dp"
+    <FrameLayout
+            android:layout_margin="6dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         <LinearLayout
+                android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@drawable/cardview_square">
 
             <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_tempat_parkir"
@@ -130,7 +134,7 @@
             </LinearLayout>
         </LinearLayout>
 
-    </android.support.v7.widget.CardView>
+    </FrameLayout>
 
 
 </LinearLayout>

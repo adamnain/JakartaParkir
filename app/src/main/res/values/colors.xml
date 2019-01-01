@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#b3bf06</color>
-    <color name="bgDarkBlue">#4e48ff</color>
-    <color name="bgBlue">#bbbcd7</color>
+    <color name="colorPrimary">#59610b</color>
+    <color name="colorPrimaryDark">#141603</color>
+    <color name="colorAccent">#95a317</color>
+    <color name="lineCardview">#c2d60e</color>
+    <color name="bgDarkBlue">#964e48ff</color>
+    <color name="bgBlue">#e1bbbcd7</color>
     <color name="txtLightWhite">#ffffff</color>
     <color name="bgYellowSemiDark">#e2d581</color>
     <color name="txtLightYellow">#ffeb56</color>
-    <color name="bgDarkGreen">#5e9656</color>
+    <color name="bgDarkGreen">#965e9656</color>
     <color name="bgGreen">#c7f5c1</color>
-    <color name="bgYellowDark">#968b27</color>
-    <color name="bgYellow">#9f9100</color>
+    <color name="bgYellowDark">#96968b27</color>
+    <color name="bgYellow">#969f9100</color>
     <color name="bgYellow2">#f7ee93</color>
-    <color name="bgOrangeDark">#e7894f</color>
+    <color name="bgOrangeDark">#96e7894f</color>
     <color name="bgOrange">#f2cab1</color>
-    <color name="bgRedDark">#e66161</color>
+    <color name="bgRedDark">#96e66161</color>
     <color name="bgRed">#e4a7a7</color>
-    <color name="bgGoldDark">#916d33</color>
+    <color name="bgGoldDark">#96916d33</color>
     <color name="bgGold">#e1c497</color>
     <color name="bgDark">#404040</color>
     <color name="bgDarkHeader">#181818</color>
+    <color name="black">#000000</color>
+    <color name="blueGradien">#3c3763</color>
+    <color name="silver">#8bcdcecb</color>
+
+
 </resources>

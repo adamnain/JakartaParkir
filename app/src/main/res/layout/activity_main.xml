@@ -6,7 +6,8 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".home.MainActivity">
+        tools:context=".home.MainActivity"
+        android:background="@drawable/gradient1">
 
     <FrameLayout
             android:layout_above="@id/bottom_layout"
