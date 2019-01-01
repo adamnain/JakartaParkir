@@ -25,7 +25,10 @@ import org.jetbrains.anko.db.insert
 import org.jetbrains.anko.db.select
 import org.jetbrains.anko.design.snackbar
 import com.facebook.shimmer.ShimmerFrameLayout
-
+import android.support.v4.content.ContextCompat.startActivity
+import android.content.Intent
+import android.net.Uri
+import org.jetbrains.anko.sdk27.coroutines.onClick
 
 
 class DetailActivity : AppCompatActivity(), DetailView {
@@ -36,7 +39,8 @@ class DetailActivity : AppCompatActivity(), DetailView {
     private var menuItem: Menu? = null
     private var isFavorite: Boolean = false
     private lateinit var shimmerContainer: ShimmerFrameLayout
-
+    private var lat: String? = null
+    private var long: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,9 +56,23 @@ class DetailActivity : AppCompatActivity(), DetailView {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         presenter = DetailPresenter(this, ApiRepository(), Gson())
         presenter.getDetailParkir(id)
-
+        getLocation()
 
     }
+
+    private fun getLocation(){
+
+        btn_arahkan.onClick {
+            val url =
+                "http://maps.google.com/maps?daddr=" +lat + "," + long
+            val intent = Intent(
+                android.content.Intent.ACTION_VIEW,
+                Uri.parse(url)
+            )
+            startActivity(intent)
+        }
+    }
+
 
     override fun showDetail(data: List<Parkir>) {
         Glide.with(this)
@@ -68,6 +86,8 @@ class DetailActivity : AppCompatActivity(), DetailView {
         tv_kapasitas_bus_detail.text = data[0].kapasitasBusTruk
         tv_alamat_detail.text = data[0].alamatParkir
         tv_kapasitas_bus_detail.text = data[0].kapasitasBusTruk
+        lat = data[0].latParkir
+        long = data[0].longParkir
         shimmerContainer.stopShimmerAnimation()
 
     }
