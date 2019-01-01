@@ -10,6 +10,7 @@ import com.facebook.shimmer.ShimmerFrameLayout
 
 import io.github.adamnain.jakartaparkir.R
 import kotlinx.android.synthetic.main.fragment_about.view.*
+import org.jetbrains.anko.sdk27.coroutines.onClick
 
 class AboutFragment : Fragment() {
 
@@ -26,17 +27,17 @@ class AboutFragment : Fragment() {
                 adamFragment(), adamFragment::class.java.simpleName)?.commit()
 
 
-        v.btn_adam.setOnClickListener{
+        v.btn_adam.onClick{
             activity?.supportFragmentManager?.beginTransaction()
                 ?.add(R.id.main_container,
                     adamFragment(), adamFragment::class.java.simpleName)?.commit()
         }
-        v.btn_luthfi.setOnClickListener{
+        v.btn_luthfi.onClick{
             activity?.supportFragmentManager?.beginTransaction()
                 ?.add(R.id.main_container,
                     luthfiFragment(), luthfiFragment::class.java.simpleName)?.commit()
         }
-        v.btn_fauzi.setOnClickListener{
+        v.btn_fauzi.onClick{
             activity?.supportFragmentManager?.beginTransaction()
                 ?.add(R.id.main_container,
                     fauziFragment(), fauziFragment::class.java.simpleName)?.commit()
