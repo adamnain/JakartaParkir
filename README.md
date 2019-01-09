@@ -1,5 +1,5 @@
 
-# Apa itu GoWarkop?
+# Apa itu JakartaParkir?
 
 Tersedia di playstore: <br>
 <a href="https://play.google.com/store/apps/details?id=io.github.adamnain.jakartaparkir"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height=70px /></a>
@@ -20,6 +20,6 @@ Berikut Fitur JakartaParkir:
 
 
 # Screenshot
-<img src="https://github.com/adamnain/GoWarkop/blob/master/ss/2.png" width="32%">&nbsp;&nbsp;
-<img src="https://github.com/adamnain/GoWarkop/blob/master/ss/1.png" width="32%">&nbsp;&nbsp;
-<img src="https://github.com/adamnain/GoWarkop/blob/master/ss/3.png" width="32%">&nbsp;&nbsp;
+<img src="https://github.com/adamnain/JakartaParkir/blob/master/ss/2.png" width="32%">&nbsp;&nbsp;
+<img src="https://github.com/adamnain/JakartaParkir/blob/master/ss/1.png" width="32%">&nbsp;&nbsp;
+<img src="https://github.com/adamnain/JakartaParkir/blob/master/ss/3.png" width="32%">&nbsp;&nbsp;
