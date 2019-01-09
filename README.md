@@ -20,6 +20,6 @@ Berikut Fitur JakartaParkir:
 
 
 # Screenshot
-<img src="https://github.com/adamnain/JakartaParkir/blob/master/ss/2.png" width="32%">&nbsp;&nbsp;
-<img src="https://github.com/adamnain/JakartaParkir/blob/master/ss/1.png" width="32%">&nbsp;&nbsp;
-<img src="https://github.com/adamnain/JakartaParkir/blob/master/ss/3.png" width="32%">&nbsp;&nbsp;
+<img src="https://github.com/adamnain/JakartaParkir/blob/master/ss/ss2.png" width="32%">&nbsp;&nbsp;
+<img src="https://github.com/adamnain/JakartaParkir/blob/master/ss/ss1.png" width="32%">&nbsp;&nbsp;
+<img src="https://github.com/adamnain/JakartaParkir/blob/master/ss/ss3.png" width="32%">&nbsp;&nbsp;
